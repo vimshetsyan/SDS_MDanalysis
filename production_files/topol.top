@@ -1,0 +1,22 @@
+; Include forcefield parameters
+#include "forcefield.itp"
+
+
+; additional params for the molecule
+#include "SDS.itp"
+
+; Include water topology
+#include "TIP3.itp"
+
+; Include topology for ions
+#include "POT.itp"
+
+[ system ]
+SDS in water
+
+[ molecules ]
+; Compound    #mol
+SDS			60
+
+TIP3        10246
+POT              60
